@@ -1,0 +1,49 @@
+\documentclass[12pt, a4paper, titlepage, twoside]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{float}
+
+\usepackage[backend=biber,style=alphabetic,autocite=inline]{biblatex}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{url}
+\usepackage{geometry}
+\usepackage{setspace}
+
+\usepackage{lmodern,textcomp}
+\usepackage{eurosym}
+\usepackage{amsmath, amssymb}
+
+\onehalfspacing
+
+%\addbibresource{literatur.bib}
+
+\begin{document}
+	
+	%titelseite
+	\pagenumbering{gobble}
+	\newgeometry{centering}
+	\include{titel}
+	\restoregeometry
+	
+	%Inhaltsverzeichnis
+	\pagenumbering{arabic}
+	\tableofcontents
+	
+	%Businessplan
+	\include{1_executive_summary}
+	\include{2_unternehmensziele}
+	\include{3_produkt_oder_dienstleistung}
+	\include{4_branche_und_markt}
+	\include{5_geschaeftssystem_und_organisation}
+	\include{6_marketing_mix}
+	\include{7_management_und_schluesselpositionen}
+	\include{8_realisierungsplanung}
+	\include{9_drei_jahres_planung}
+	\include{10_finanzbedarf}
+	
+	%Literatur
+	%\printbibliography
+\end{document}
