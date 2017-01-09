@@ -1,0 +1,15 @@
+#log-Dateien
+*.log
+
+#pdf-Dateien
+*.pdf
+
+#Latex-Dateien
+*.aux
+*.toc
+*.gz
+*.xml
+*.lof
+*.blg
+*.bcf
+*.bbl
